@@ -12,7 +12,7 @@ class Stack(object):
         self.__items__.append(item)
 
     def peek(self):
-        return items[-1]
+        return self.__items__[-1]
 
     def pop(self):
         return self.__items__.pop()
