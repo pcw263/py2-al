@@ -4,11 +4,11 @@
 def num2str(num,base):
     strs = "0123456789"
 
-    if rest < base:
-        return strs[rest]
+    if num < base:
+        return strs[num]
 
     else:
-        return num2str[rest//base,base] + strs[rest%base]
+        return num2str(num//base,base) + strs[num%base]
 
 if __name__ == "__main__":
     n = 438
